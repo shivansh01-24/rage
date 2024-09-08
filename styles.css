@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #000000;
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: #e7d54b;
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f0c6fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('farmland.jpg') no-repeat center center/cover;
+    color: #7708e646;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #EFFFFB;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    background-color: #1b2067;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.services-section {
+    padding: 40px;
+    background-color: #1c2020;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #c51d1d;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(221, 198, 198, 0.1);
+}
+
+.service h3 {
+    color: #e914de;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    background-color: #30ec9b;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 40px;
+    background-color: #4fa8f1;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form label {
+    margin: 10px 0 5px;
+}
+
+.contact-section form input, 
+.contact-section form textarea {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+footer {
+    color: #ec8849;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    background-color: #151d1d;
+}
+
+section {
+    text-align: center;
+    background-color: #d0ed80;
+}
+
+h2 {
+    color: #d85f5f;
+}
+
+.log-in-btn {
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+    margin: 0;
+}
+
+.log-in-btn:hover {
+    background-color: #0056b3;
+}
+
+.get-started-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.get-started-btn:hover {
+    background-color: #218838;
+}

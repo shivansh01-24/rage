@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops Information - Golden Fields</title>
+    <link rel="stylesheet" href="2ndpage.css">
+   
+</head>
+<body>
+    <div class="home-button">
+        <a href="index.html">Home</a>
+    </div>
+    <h1><b>Crops Information</b></h1>
+    <p>At Golden Fields, we provide in-depth and comprehensive information on a wide range of crops to support your agricultural needs. Our detailed resources cover essential aspects to help you optimize your farming practices:</p>
+    
+    <ul>
+     <li><strong>Growth Cycles:</strong> Gain a thorough understanding of the complete growth cycle of various crops, from planting to harvest, ensuring you achieve optimal yields.</li>
+     <li><strong>Water Requirements:</strong> Discover the specific water needs of different crops to effectively manage irrigation and maintain healthy crops.</li>
+     <li><strong>Soil Preferences:</strong> Learn about the types of soil that are best suited for each crop, which will help you enhance growth and productivity.</li>
+     <li><strong>Climate Needs:</strong> Find out the ideal weather conditions for each crop to maximize performance and minimize risks.</li>
+     <li><strong>Best Cultivation Practices:</strong> Access detailed guidance on the most effective methods and techniques for cultivating your crops.</li>
+     <li><strong>Regional Suitability:</strong> Identify which crops are best suited to your local region and how to select the most suitable options for your area.</li>
+     <li><strong>Maximizing Benefits:</strong> Receive expert advice on which crops offer the highest returns with the least amount of work, helping you optimize your farming efforts.</li>
+</ul>
+
+<p>Our goal is to empower you with the knowledge needed to make informed decisions and achieve the best results in your farming activities.</p>
+
+ <div class="search-container">
+   <h2>Search for Crop Information</h2>
+         <input type="text" id="crop-search" placeholder="Enter crop name">
+     <button onclick="searchCrop()">Search</button>
+      </div>
+
+  <div class="search-results" id="search-results"></div>
+  <script>
+     function searchCrop() {
+          const cropName = document.getElementById('crop-search').value.trim().toLowerCase();
+        const resultsContainer = document.getElementById('search-results');
+         const cropLinks = {
+                     'corn': 'https://eos.com/blog/how-to-grow-corn/',
+               'wheat': 'https://eos.com/blog/growing-wheat/#:~:text=Wheat%20needs%20the%20most%20water,and%20the%20early%20grain%20stage.',
+            'rice': 'https://eos.com/blog/how-to-grow-rice/'
+            };
+
+      resultsContainer.innerHTML = '';
+
+  if (cropName in cropLinks) {
+         resultsContainer.innerHTML = `
+          <h3>Details for ${cropName.charAt(0).toUpperCase() + cropName.slice(1)}</h3>
+          <p> Click the link below to find detailed information about ${cropName}:</p>
+          <a href="${cropLinks[cropName]}" target="_blank">${cropLinks[cropName]}</a>
+                `;
+    } else {
+     resultsContainer.innerHTML = `<p>No information available for "${cropName}". Please try a different crop.</p>`;
+            }
+        }
+ </script>
+</body>
+</html>

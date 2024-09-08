@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: gold;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    background-color: #003d7a;
+}
+
+.farmer-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.farmer-section h1 {
+    font-size: 36px;
+    margin: 0;
+    color: gold;
+}
+
+.farmer-section p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+h2{
+    color: rgb(12, 82, 33);
+}
+button{
+    background-color: rgb(183, 235, 164);
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(221, 238, 238);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:red;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.home-button a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1em;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+.home-button a:hover {
+    text-decoration: underline;
+    background-color: #e2e6ea;
+}
+
+.weather-links {
+    margin-top: 20px;
+}
+
+.weather-links h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.weather-links a:hover {
+    text-decoration: underline;
+}
+
+.weather-links p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+h2{
+    color: red;
+}
